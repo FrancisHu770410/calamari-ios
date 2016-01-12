@@ -25,7 +25,7 @@
 	<key>login_sign_in</key>
 	<string>ログイン</string>
 	<key>login_version</key>
-	<string>Ceph モニター版 0.17.2</string>
+	<string>Ceph モニター版 0.17.3</string>
 	<key>settings_profile_language</key>
 	<string>言語</string>
 	<key>settings_dialog_save</key>
@@ -89,7 +89,7 @@
 	<key>health_card_pools</key>
 	<string>プール</string>
 	<key>health_card_active</key>
-	<string>アクティブ</string>
+	<string></string>
 	<key>health_card_hosts</key>
 	<string>ホスト</string>
 	<key>health_card_reporting</key>
