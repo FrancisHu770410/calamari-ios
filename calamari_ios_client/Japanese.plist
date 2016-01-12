@@ -89,7 +89,7 @@
 	<key>health_card_pools</key>
 	<string>プール</string>
 	<key>health_card_active</key>
-	<string>アクティブ</string>
+	<string></string>
 	<key>health_card_hosts</key>
 	<string>ホスト</string>
 	<key>health_card_reporting</key>

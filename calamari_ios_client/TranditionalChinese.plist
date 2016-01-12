@@ -89,7 +89,7 @@
 	<key>health_card_pools</key>
 	<string>資源池</string>
 	<key>health_card_active</key>
-	<string>活躍</string>
+	<string></string>
 	<key>health_card_hosts</key>
 	<string>主機數</string>
 	<key>health_card_reporting</key>
@@ -97,7 +97,7 @@
 	<key>health_card_pg</key>
 	<string>PG 狀態</string>
 	<key>health_card_clean</key>
-	<string>Clean</string>
+	<string>正常</string>
 	<key>health_card_Working</key>
 	<string>Working</string>
 	<key>health_card_Dirty</key>
@@ -163,11 +163,11 @@
 	<key>host_detail_summary_active</key>
 	<string>- 活躍</string>
 	<key>host_detail_summary_buffers</key>
-	<string>- 緩衝</string>
+	<string>- 緩存</string>
 	<key>host_detail_summary_free</key>
-	<string>- 釋放</string>
+	<string>- 閒置</string>
 	<key>host_detail_summary_cached</key>
-	<string>- 暫存</string>
+	<string>- 快取</string>
 	<key>host_detail_all_cpus_system</key>
 	<string>- 系統</string>
 	<key>host_detail_all_cpus_user</key>
