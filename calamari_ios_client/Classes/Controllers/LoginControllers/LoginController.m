@@ -159,7 +159,7 @@
     self.loginView.accountField.placeholder = [[LocalizationManager sharedLocalizationManager] getTextByKey:@"login_name"];
     self.loginView.passwordField.placeholder = [[LocalizationManager sharedLocalizationManager] getTextByKey:@"login_password"];
     [self.loginView.loginButton setTitle:[[LocalizationManager sharedLocalizationManager] getTextByKey:@"login_sign_in"] forState:UIControlStateNormal];
-    self.loginView.versionLabel.text = [[LocalizationManager sharedLocalizationManager] getTextByKey:@"login_version"];
+//    self.loginView.versionLabel.text = [[LocalizationManager sharedLocalizationManager] getTextByKey:@"login_version"];
     [self.loginView setBottomInfo];
 }
 

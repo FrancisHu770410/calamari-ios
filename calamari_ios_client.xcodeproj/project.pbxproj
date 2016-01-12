@@ -314,7 +314,7 @@
 		159169921BBD8F7500846CB7 /* LocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationManager.m; sourceTree = "<group>"; };
 		159E4A3A1BA66D7200EFC3D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		15C476201BD3BBC300D9826B /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		15CACE051BA5276300DFD26B /* calamari_ios_client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calamari_ios_client.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15CACE051BA5276300DFD26B /* 儲存監控系統.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "儲存監控系統.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CACE091BA5276300DFD26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15CACE0A1BA5276300DFD26B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15CACE0C1BA5276300DFD26B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -809,7 +809,7 @@
 		15CACE061BA5276300DFD26B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15CACE051BA5276300DFD26B /* calamari_ios_client.app */,
+				15CACE051BA5276300DFD26B /* 儲存監控系統.app */,
 				15CACE1E1BA5276300DFD26B /* calamari_ios_clientTests.xctest */,
 			);
 			name = Products;
@@ -896,7 +896,7 @@
 			);
 			name = calamari_ios_client;
 			productName = calamari_ios_client;
-			productReference = 15CACE051BA5276300DFD26B /* calamari_ios_client.app */;
+			productReference = 15CACE051BA5276300DFD26B /* 儲存監控系統.app */;
 			productType = "com.apple.product-type.application";
 		};
 		15CACE1D1BA5276300DFD26B /* calamari_ios_clientTests */ = {
@@ -1228,12 +1228,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = calamari_ios_client/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MQTK4RU7AZ.CephMonitor.MOE;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = CephMonitor.MOE;
+				PRODUCT_NAME = "儲存監控系統";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1245,12 +1245,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = calamari_ios_client/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MQTK4RU7AZ.CephMonitor.MOE;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = CephMonitor.MOE;
+				PRODUCT_NAME = "儲存監控系統";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
