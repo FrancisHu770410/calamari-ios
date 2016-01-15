@@ -88,15 +88,15 @@
 }
 
 + (NSString*) getAlertRuleStringWithHostIp:(NSString*)hostIp port:(NSString *)port {
-    return [NSString stringWithFormat:@"http://%@/api/v1/user/me/alert_rule", hostIp];
+    return [NSString stringWithFormat:@"http://%@:%@/api/v1/user/me/alert_rule", hostIp, port];
 }
 
 + (NSString*) getSetAlertTriggerStringWithHostIp:(NSString*)hostIp port:(NSString*)port kind:(NSString *)kind warnError:(NSString *)warnError {
-    return [NSString stringWithFormat:@"http://%@/api/v1/user/me/%@/%@", hostIp, kind, warnError];
+    return [NSString stringWithFormat:@"http://%@:%@/api/v1/user/me/%@/%@", hostIp, port, kind, warnError];
 }
 
 + (NSString*) getSetTimePeriodStringWithHostIp:(NSString *)hostIp port:(NSString *)port kind:(NSString *)kind {
-    return [NSString stringWithFormat:@"http://%@/api/v1/user/me/polling/%@", hostIp, kind];
+    return [NSString stringWithFormat:@"http://%@:%@/api/v1/user/me/polling/%@", hostIp, port, kind];
 }
 
 + (NSString*) getUserInfoWithIP:(NSString *)ip Port:(NSString *)port {
