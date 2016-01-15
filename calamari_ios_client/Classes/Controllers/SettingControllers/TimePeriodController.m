@@ -26,6 +26,7 @@
 @property (nonatomic, strong) UIPanGestureRecognizer *clockPanGesture;
 @property (nonatomic, strong) UILabel *tempLabel;
 @property (nonatomic, strong) NSArray *titleArray;
+@property (nonatomic, strong) NSArray *titleLocalizationArray;
 @property (nonatomic, strong) NSArray *detailArray;
 @property (nonatomic, strong) NSArray *keyArray;
 @property (nonatomic) CGPoint tempHourPoint;
@@ -71,6 +72,8 @@
     
     self.clockPanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(clockAction:)];
     self.titleArray = @[@"settings_time_period_normal_title", @"settings_time_period_abnormal_title", @"settings_time_period_server_abnormal_title"];
+    self.titleLocalizationArray = @[[[LocalizationManager sharedLocalizationManager]getTextByKey:@"settings_time_period_normal_title"], [[LocalizationManager sharedLocalizationManager]getTextByKey:@"settings_time_period_abnormal_title"], [[LocalizationManager sharedLocalizationManager]getTextByKey:@"settings_time_period_server_abnormal_title"]];
+
     self.detailArray = @[@"settings_time_period_normal_content", @"settings_time_period_abnormal_content", @"settings_time_period_server_abnormal_content"];
     self.keyArray = @[@"normalTimePeriod", @"abnormalTimePeriod", @"serverAbnormalTimePeriod"];
     self.pointKeyArray = @[@"normalPeriodPoint", @"abnormalPeriodPoint", @"serverAbnormalPeriodPoint"];
@@ -265,7 +268,7 @@
         self.tempSecondPoint = self.clockSettingView.circleView.center;
     }
     NSString *tempString = [NSString stringWithFormat:@"%@%@%@", self.clockSettingView.hourLabel.text, self.clockSettingView.minuteLabel.text, self.clockSettingView.secondLabel.text];
-    NSInteger objectIndex = [self.titleArray indexOfObject:self.clockSettingView.clockNameLabel.text];
+    NSInteger objectIndex = [self.titleLocalizationArray indexOfObject:self.clockSettingView.clockNameLabel.text];
     NSString *currentKey = [NSString stringWithFormat:@"%@_%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"HostIP"], self.keyArray[objectIndex]];
     NSString *currentPointKey = [NSString stringWithFormat:@"%@_%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"HostIP"], self.pointKeyArray[objectIndex]];
     NSIndexPath *tempPath = [NSIndexPath indexPathForItem:0 inSection:0];
